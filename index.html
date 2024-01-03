@@ -35,6 +35,28 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
+
+        <h2>Калькулятор вкладов</h2>
+        <div class="calculator">
+            <div class="calculator-settings">
+                <form id="caclulator-form" class="caclulator-form">
+                    <select id="deposit-type" required>
+                        <option value="" disabled selected hidden>Вид вклада</option>
+                        <option value="Пополняемый">Пополняемый</option>
+                        <option value="Срочный">Срочный</option>
+                    </select>
+                    <select id="deposit-term" required>
+                        <option value="" disabled selected hidden>Срок вклада</option>
+                    </select>
+                    <input type="number" id="input-sum" placeholder="Сумма, руб" required>
+                    <button class="btn">Рассчитать</button>
+                </form>
+            </div>
+            <div class="calculator-result">
+                <p id="initial-params"></p>
+                <p id="result-sum"></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

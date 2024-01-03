@@ -3,9 +3,15 @@
 }
 
 .swiper {
-    width: 800px;
-    height: 400px;
+    width: 40vw;
+    height: 40vh;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 255, .2);
+}
+
+@media screen and (max-width: 900px) {
+    .swiper {
+        height: 20vh;
+    }
 }
 
 .swiper-slide{
@@ -18,6 +24,51 @@
   }
 
 .swiper-slide img{
-    width: 800px;
+    width: 40vw;
     /* object-fit: cover; */
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caclulator-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.caclulator-form > select, input {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 3px;
+}
+
+.caclulator-form > select option {
+    color: rgb(218, 238, 219);
+    background-color: #4073e0;
+}
+
+.calculator-result {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #4073e0;
+    background-color: #4073e0;
+    color: rgb(218, 238, 219);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+    color: #4073e0;
+    background-color: transparent;
 }
